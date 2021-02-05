@@ -1,11 +1,11 @@
 h2{
-    /* font-family: 'Coming Soon', cursive; */
-    font-family: 'Yusei Magic', sans-serif;
+     font-family: 'Coming Soon', cursive; 
+    /*font-family: 'Yusei Magic', sans-serif;*/
 }
 
 .stage{
     position: fixed;
-    background-color: pink;
+    background-color: rgb(255, 24, 63);
     left: 50vw;
     top: 0;
     width: 50vw;
