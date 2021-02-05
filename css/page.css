@@ -7,6 +7,7 @@ body{
 
 article{
     width: 50vw;
+    z-index: 10;
 }
 
 .wrap{
