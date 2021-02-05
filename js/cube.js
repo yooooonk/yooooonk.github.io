@@ -2,6 +2,7 @@ const room = document.querySelector('.room');
 const cube = document.querySelector('.cube');
 const title = document.querySelector('.title-word-wrap');
 const scrollBar = document.querySelector('.scroll-bar');
+const toTop = document.querySelector('.to-top');
 
 let scrollState = false;
 let lastPage = 1;
@@ -48,3 +49,7 @@ const moveScreen = (e)=>{
     
     room.style.transform = `rotateX(${mousePos.y*15}deg) rotateY(${mousePos.x*15}deg)`        
 }
+
+toTop.addEventListener('click',(e)=>{
+    window.scrollTo(0,0)
+})
