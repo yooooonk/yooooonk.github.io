@@ -1,0 +1,42 @@
+.stage{
+    position: fixed;
+    background-color: pink;
+    left: 50vw;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    perspective: 600px;
+}
+
+.cube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s;
+    
+}
+
+.cube-face{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: rgba(184, 244, 255, 0.644);
+}
+
+.cube-face-front { transform: rotateY(  0deg) translateZ(7.5vw); }
+.cube-face-right { transform: rotateY( 90deg) translateZ(7.5vw); }
+.cube-face-back  { transform: rotateY(180deg) translateZ(7.5vw); }
+.cube-face-left  { transform: rotateY(-90deg) translateZ(7.5vw); }
+.cube-face-top   { transform: rotateX( 90deg) translateZ(15vh); }
+.cube-face-bottom{ transform: rotateX(-90deg) translateZ(15vh); }
+
+.menu-title{
+    font-size: 2vw;
+}
