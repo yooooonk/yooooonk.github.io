@@ -38,6 +38,9 @@ h2{
 
 .cube-face{    
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30%;
     height: 30%;
     background-color: rgba(184, 244, 255, 0.644);
@@ -45,66 +48,32 @@ h2{
 
 .cube-face-front { 
     transform: rotateY(  0deg) translateZ(7.5vw); 
-    background-image:url('../image/cube1.jpg');
-    background-size: cover;
+    background-color: #f4cfd0;    
 }
 .cube-face-right { 
-    transform: rotateY( 90deg) translateZ(7.5vw); 
-    background-image:url('../image/cube.jpg');
-    background-size: cover;
+    transform: rotateY( 90deg) translateZ(7.5vw);        
 }
 .cube-face-back  { 
     transform: rotateY(180deg) translateZ(7.5vw); 
-    background-image:url('../image/cube3.jpg');
-    background-size: cover;
+    background-color: #b8d0e7;    
 }
 .cube-face-left  { 
-    transform: rotateY(-90deg) translateZ(7.5vw); 
-    background-image:url('../image/cube5.jpg');
-    background-size: cover;
+    transform: rotateY(-90deg) translateZ(7.5vw);    
 }
 .cube-face-top   { 
     transform: rotateX( 90deg) translateZ(7.5vw); 
-    background-image:url('../image/cube2.jpg');
-    background-size: cover;
+    background-color: #c7e1e9;    
 }
 .cube-face-bottom{ 
     transform: rotateX(-90deg) translateZ(7.5vw); 
-    background-image:url('../image/cube5.jpg');
-    background-size: cover;
+    background-color: #d7efe8;   
 }
-
-
-.title-word-wrap{    
-    position: fixed;
-    display: flex;    
-    flex-direction: row; 
-    justify-content: space-between;
-    left: 50%;
-    top:48%;    
-    width: 180vw;
-    transition: 0.7s;
-} 
 
 .menu-title{
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: rgb(255, 255, 255);    
-    background-color:rgba(219, 219, 219, 0.747);
 }
 
-.menu-title:nth-child(1){
-    margin-left: 18vw;
-}
-
- .menu-title:nth-child(2){
-     margin-left: -2vw; 
-} 
-
-/* .menu-title:nth-child(3){
-    margin-left: 3vw; 
-} */
-
-.menu-title:nth-child(4){
-    
-    margin-right: 25vw; 
+.menu:nth-child(3){
+    background-origin: red;
 }
