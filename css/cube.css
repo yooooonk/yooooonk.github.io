@@ -1,3 +1,7 @@
+h2{
+    /* font-family: 'Coming Soon', cursive; */
+    font-family: 'Yusei Magic', sans-serif;
+}
 
 .stage{
     position: fixed;
@@ -6,7 +10,7 @@
     top: 0;
     width: 50vw;
     height: 100vh;
-    perspective: 600px;
+    perspective: 600px;    
     
 }
 
@@ -28,7 +32,7 @@
     width: 50vw;
     height: 50vw;
     transform-style: preserve-3d;
-    transition: 1s;
+    transition: 1s;    
     
 }
 
@@ -39,12 +43,36 @@
     background-color: rgba(184, 244, 255, 0.644);
 }
 
-.cube-face-front { transform: rotateY(  0deg) translateZ(7.5vw); }
-.cube-face-right { transform: rotateY( 90deg) translateZ(7.5vw); }
-.cube-face-back  { transform: rotateY(180deg) translateZ(7.5vw); }
-.cube-face-left  { transform: rotateY(-90deg) translateZ(7.5vw); }
-.cube-face-top   { transform: rotateX( 90deg) translateZ(7.5vw); }
-.cube-face-bottom{ transform: rotateX(-90deg) translateZ(7.5vw); }
+.cube-face-front { 
+    transform: rotateY(  0deg) translateZ(7.5vw); 
+    background-image:url('../image/cube1.jpg');
+    background-size: cover;
+}
+.cube-face-right { 
+    transform: rotateY( 90deg) translateZ(7.5vw); 
+    background-image:url('../image/cube.jpg');
+    background-size: cover;
+}
+.cube-face-back  { 
+    transform: rotateY(180deg) translateZ(7.5vw); 
+    background-image:url('../image/cube3.jpg');
+    background-size: cover;
+}
+.cube-face-left  { 
+    transform: rotateY(-90deg) translateZ(7.5vw); 
+    background-image:url('../image/cube5.jpg');
+    background-size: cover;
+}
+.cube-face-top   { 
+    transform: rotateX( 90deg) translateZ(7.5vw); 
+    background-image:url('../image/cube2.jpg');
+    background-size: cover;
+}
+.cube-face-bottom{ 
+    transform: rotateX(-90deg) translateZ(7.5vw); 
+    background-image:url('../image/cube4.jpg');
+    background-size: cover;
+}
 
 
 .title-word-wrap{    
@@ -53,24 +81,24 @@
     flex-direction: row; 
     justify-content: space-between;
     left: 50%;
-    top:50%;
-    background-color: yellow;
+    top:48%;    
     width: 150vw;
-    transition: 1.5s;
+    transition: 0.7s;
 } 
 
 .menu-title{
     font-size: 3vw;
-    color: white;    
+    color: rgb(255, 255, 255);    
+    background-color:rgba(219, 219, 219, 0.747);
 }
 
 .menu-title:nth-child(1){
     margin-left: 18vw;
 }
 
-/* .menu-title:nth-child(2){
-     margin-left: 0vw; 
-} */
+ .menu-title:nth-child(2){
+     margin-left: -2vw; 
+} 
 
 /* .menu-title:nth-child(3){
     margin-left: 3vw; 
