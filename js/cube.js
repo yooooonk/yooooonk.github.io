@@ -1,7 +1,7 @@
 const room = document.querySelector('.room');
 const cube = document.querySelector('.cube');
 const title = document.querySelector('.title-word-wrap');
-
+const scrollBar = document.querySelector('.scroll-bar');
 
 let scrollState = false;
 let lastPage = 1;
@@ -13,22 +13,18 @@ window.addEventListener('scroll',(e)=>{
     const scrollPer = pageYOffset / maxScrollValue * 100;
     const page = Math.floor(scrollPer/30);
 
-    rollCube(page);
-    rollTitle(page);
+    rollCube(page); 
+    paintBar(scrollPer);
     
 });
 
-const rollCube = (page)=>{    
-        
+const rollCube = (page)=>{            
     cube.style.transform = `rotateX(${-90*page}deg)`    
 }
 
-const rollTitle = (page)=>{
+const paintBar = (scrollPer)=>{
     
-    if(lastPage !== page){
-        '페이지바뀜'
-    }
-    title.style.transform = `translateX(-${40*page}vw)`
+    scrollBar.style.width = `${scrollPer/2}%`
 }
 
 window.addEventListener('resize',()=>{
