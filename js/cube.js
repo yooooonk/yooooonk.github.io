@@ -28,7 +28,7 @@ const rollTitle = (page)=>{
     if(lastPage !== page){
         '페이지바뀜'
     }
-    title.style.transform = `translateX(-${30*page}vw)`
+    title.style.transform = `translateX(-${40*page}vw)`
 }
 
 window.addEventListener('resize',()=>{
