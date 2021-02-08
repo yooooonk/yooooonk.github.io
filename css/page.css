@@ -17,6 +17,15 @@ font-family: 'Yusei Magic', sans-serif;
 
     --font__kr : 'Noto Serif KR', serif ;
     --font__en :  'Roboto Slab', serif;
+    --font__title-color: rgb(26, 0, 9);
+
+    --light-pink:rgba(255, 188, 188, 0.788);
+    --beige: #f4cfd0;
+
+    --img__size:15vh;
+
+    --content__img : 18vh;
+    
 }
 
 body{
@@ -42,15 +51,18 @@ article section{
     width: 100%;
     height: 100vh;
     background-color: var(--color__background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 .underbar_bold{
-    border-bottom: rgba(255, 188, 188, 0.788) solid 10px;
+    border-bottom: var(--light-pink) solid 10px;
 }
 
 .underbar{
-    border-bottom: rgba(255, 188, 188, 0.788) solid 3px;
+    border-bottom: var(--light-pink) solid 3px;    
 }
 
 
@@ -107,21 +119,24 @@ article section{
     }
 } 
 
+.section-title{
+    font-size: var(--font__size-l);
+    color: rgb(27, 1, 14);
+    border-bottom: var(--font__title-color) dotted 2px;
+    
+}
 
 
 /*ABOUT me*/
-.about{    
-   
+.about{       
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+    height: 100vh;    
+    
 }
 
 .about-head{
     font-size: var(--font__size-l); 
-    margin: 10vh 0 var(--content-margin) 0;
+    margin: var(--content-margin);
     
 }
 
@@ -136,8 +151,8 @@ article section{
 }
 
 .stack img{
-    width: 15vh;
-    height: 15vh;
+    width: var(--img__size);
+    height: var(--img__size);
     border-radius: 50%;    
 }
 
@@ -146,3 +161,39 @@ article section{
     
 }
 
+/*프로젝트*/
+.main-project{
+    width: 80%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;   
+    flex-wrap: nowrap;
+    margin: var(--content-margin);
+}
+
+.main-project .content-wrap{
+    width: 35vh;
+    height: 40vh;
+}
+
+.content-wrap .content-img{
+    background-color: pink;
+    width: 100%;
+    height: 60%;
+}
+
+.content-wrap .content-des{
+    position: relative;
+    left: 10%;
+    top:-10%;
+    width: 80%;
+    height: 50%;
+    padding: 2vh;
+    background-color: var(--beige);
+}
+
+.content-des hr{
+    text-align: right;
+    border: #555 dotted;
+    width: 30px;
+}
