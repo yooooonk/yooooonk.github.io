@@ -1,17 +1,16 @@
 h2{
-     font-family: 'Coming Soon', cursive; 
-    /*font-family: 'Yusei Magic', sans-serif;*/
+     font-family: var(--font__kr);
 }
 
 .stage{
     position: fixed;
-    background-color: rgb(255, 24, 63);
     left: 50vw;
-    top: 0;
+    top: 0; 
+    background-color: rgb(255, 24, 63);
     width: 50vw;
     height: 100vh;
     perspective: 600px;    
-    
+     
 }
 
 .room{

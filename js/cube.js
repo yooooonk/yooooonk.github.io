@@ -5,30 +5,54 @@ const scrollBar = document.querySelector('.scroll-bar');
 const toTop = document.querySelector('.to-top');
 
 let scrollState = false;
-let lastPage = 1;
+let page = 1;
 let mousePos = {x:0, y:0}
+let screenMode = 'full'
+
 
 window.addEventListener('scroll',(e)=>{
     clearTimeout(scrollState);
     
     const scrollPer = pageYOffset / maxScrollValue * 100;
-    const page = Math.floor(scrollPer/30);
-
-    rollCube(page); 
-    paintBar(scrollPer);
+    page = Math.floor(scrollPer/30);
+    if(screenMode==='mobile'){
+        slideScreen(scrollPer)
+    }else{
+        rollCube(); 
+        paintScrollBar(scrollPer);
+    }
+    
     
 });
 
-const rollCube = (page)=>{            
+const slideScreen = () =>{
+    console.log(page)
+}
+
+const rollCube = ()=>{            
     cube.style.transform = `rotateX(${-90*page}deg)`    
 }
 
-const paintBar = (scrollPer)=>{
-    
-    scrollBar.style.width = `${scrollPer/2}%`
+const paintScrollBar = (scrollPer)=>{
+    const modePer = screenMode==='full'? 2 : 1;
+    scrollBar.style.width = `${scrollPer/modePer}%`
 }
 
-window.addEventListener('resize',()=>{
+window.addEventListener('resize',(e)=>{
+    const width = window.innerWidth;
+
+    if(width > 760){
+        screenMode = 'full'
+    }
+
+    if(width >= 480 && width <= 760){
+        screenMode = 'tablet'
+    }
+
+    if(width<= 480){
+        screenMode = 'mobile'
+    }
+
     setMaxScrollValue();    
 });
 
