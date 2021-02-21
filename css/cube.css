@@ -54,7 +54,7 @@ h2{
     background-color: #ffffbf; 
 }
 .cube-face-back  { 
-    transform: rotateY(180deg) translateZ(7.5vw); 
+    transform: rotateY(180deg) translateZ(7.5vw) rotateZ(180deg); 
     background-color: #b8d0e7;    
 }
 .cube-face-left  { 
@@ -73,6 +73,10 @@ h2{
 .menu-title{
     font-size: 2.5vw;
     color: rgb(255, 255, 255);    
+}
+
+.menu.work{
+    background-color: red;
 }
 
 
