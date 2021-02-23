@@ -5,13 +5,13 @@ h2{
 .stage{
     position: fixed;
     left: 50vw;
-    top: 0; 
-    background-color: rgb(255, 24, 63);
+    top: 0;     
     width: 50vw;
     height: 100vh;
-    perspective: 600px;    
-     
+    perspective: 600px;
 }
+
+
 
 .room{
     transform-style: preserve-3d;        
@@ -20,7 +20,14 @@ h2{
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    transform: rotateX(-10deg);
+}
+
+video{
+    position: absolute;
+    
+    height: 100vh;    
 }
 
 .cube{
@@ -32,6 +39,7 @@ h2{
     height: 50vw;
     transform-style: preserve-3d;
     transition: 1s;    
+    z-index: 100;
     
 }
 
@@ -42,41 +50,33 @@ h2{
     justify-content: center;
     width: 30%;
     height: 30%;
-    background-color: rgba(184, 244, 255, 0.644);
+    
+    /* background-color: rgba(184, 244, 255, 0.644); */
 }
 
 .cube-face-front { 
-    transform: rotateY(  0deg) translateZ(7.5vw); 
-    background-color: #f4cfd0;    
+    transform: rotateY(  0deg) translateZ(7.5vw);     
 }
 .cube-face-right { 
-    transform: rotateY( 90deg) translateZ(7.5vw);        
-    background-color: #ffffbf; 
+    transform: rotateY( 90deg) translateZ(7.5vw);            
 }
 .cube-face-back  { 
-    transform: rotateY(180deg) translateZ(7.5vw) rotateZ(180deg); 
-    background-color: #b8d0e7;    
+    transform: rotateY(180deg) translateZ(7.5vw) rotateZ(180deg);     
 }
 .cube-face-left  { 
-    transform: rotateY(-90deg) translateZ(7.5vw);   
-    background-color: #ffffba; 
+    transform: rotateY(-90deg) translateZ(7.5vw);       
 }
 .cube-face-top   { 
-    transform: rotateX( 90deg) translateZ(7.5vw); 
-    background-color: #c7e1e9;    
+    transform: rotateX( 90deg) translateZ(7.5vw);     
 }
 .cube-face-bottom{ 
-    transform: rotateX(-90deg) translateZ(7.5vw); 
-    background-color: #d7efe8;   
+    transform: rotateX(-90deg) translateZ(7.5vw);     
 }
 
 .menu-title{
     font-size: 2.5vw;
-    color: rgb(255, 255, 255);    
-}
-
-.menu.work{
-    background-color: red;
+    color: rgb(255, 255, 255);
+    
 }
 
 
