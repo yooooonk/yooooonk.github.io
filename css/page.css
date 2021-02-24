@@ -12,7 +12,9 @@ font-family: 'Yusei Magic', sans-serif;
     --color__background: rgb(255, 245, 233);  
 
     --font__size-l:5vh;
+    --font__size-ml:3.5vh;
     --font__size-m:2.5vh;
+    --font__size-sm:2vh;
     --font__size-s:1vh;
 
     --font__kr : 'Noto Serif KR', serif ;
@@ -23,6 +25,8 @@ font-family: 'Yusei Magic', sans-serif;
     --beige: #f4cfd0;
 
     --img__size:15vh;
+
+    --des__size:20vh;
 
     --content__img : 18vh;
     
@@ -164,32 +168,42 @@ article section{
 }
 
 /*skills*/
-.stack{    
-    margin-top: 3vh;
-    display: flex;    
+
+.skills .section-content{    
+    height: 80%;
+    flex-wrap: wrap;    
     flex-direction: column;
+    justify-content: space-around;
+}
+
+.part{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 200px;
-    /* border: 1px solid black; */
-
+    
 }
 
-.skills .section-content{
-    background-color: #f4cfd0;
-    flex-wrap: wrap;
+.part span{
+    width: 20%;
+    margin-right: 10px;
+    font-weight: bold;
+    
 }
 
-.stack img{
-    width: var(--img__size);
-    height: var(--img__size);
-    border-radius: 50%;        
+.part ul{
+    width: 30%;
+    list-style-type: disc;
 }
 
-.stack .des{
-    width: 100%;
-    background-color: red;
+.part div{
+    width: 50%;
+    font-size: var(--font__size-sm);
 }
+
+
+
+
+
+
 
 /*프로젝트*/
 
@@ -199,6 +213,10 @@ article section{
     height: 40vh;
 }
 
+.content-wrap div {
+    width: 100%;
+    height: 60%;
+}
 .content-wrap .content-img{
     background-color: pink;
     width: 100%;
@@ -206,12 +224,7 @@ article section{
 }
 
 .content-wrap .content-des{
-    position: relative;
-    left: 10%;
-    top:-10%;
-    width: 80%;
-    height: 50%;
-    padding: 2vh;
+    position: absolute;    
     background-color: var(--beige);
 }
 
