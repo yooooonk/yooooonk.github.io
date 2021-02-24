@@ -71,7 +71,7 @@ const moveScreen = (e)=>{
     mousePos.x = -1 + (e.clientX/window.innerWidth)*2
     mousePos.y = 1 - (e.clientY/window.innerHeight)*2;
     
-    room.style.transform = `rotateX(${mousePos.y*15}deg) rotateY(${mousePos.x*15}deg)`        
+    room.style.transform = `rotateY(${mousePos.x*15}deg) rotateX(-10deg)`        
 }
 
 toTop.addEventListener('click',(e)=>{
