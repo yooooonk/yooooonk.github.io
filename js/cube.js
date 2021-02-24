@@ -30,7 +30,7 @@ const slideScreen = () =>{
 }
 
 const rollCube = ()=>{            
-    cube.style.transform = `rotateX(${-40*page}deg)`    
+    cube.style.transform = `rotateY(${-40*page}deg)`    
 }
 
 const paintScrollBar = (scrollPer)=>{

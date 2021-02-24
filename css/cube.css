@@ -55,17 +55,17 @@ video{
 }
 
 .cube-face-front { 
-    transform: rotateY(  0deg) translateZ(12vw);     
+    transform: rotateY(  0deg) translateZ(20vw);     
 }
 
 .cube-face-top   { 
-    transform: rotateX( 40deg) translateZ(12vw);     
+    transform: rotateY( 40deg) translateZ(20vw);     
 }
 .cube-face-back  { 
-    transform: rotateX(80deg) translateZ(12vw) ;     
+    transform: rotateY(80deg) translateZ(20vw) ;     
 }
 .cube-face-bottom{ 
-    transform: rotateX(120deg) translateZ(12vw);     
+    transform: rotateY(120deg) translateZ(20vw);     
 }
 
 .menu-title{
