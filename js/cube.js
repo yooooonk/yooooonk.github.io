@@ -30,7 +30,7 @@ const slideScreen = () =>{
 }
 
 const rollCube = ()=>{            
-    cube.style.transform = `rotateX(${-90*page}deg)`    
+    cube.style.transform = `rotateX(${-40*page}deg)`    
 }
 
 const paintScrollBar = (scrollPer)=>{
@@ -71,7 +71,7 @@ const moveScreen = (e)=>{
     mousePos.x = -1 + (e.clientX/window.innerWidth)*2
     mousePos.y = 1 - (e.clientY/window.innerHeight)*2;
     
-    room.style.transform = `rotateY(${mousePos.x*15}deg) rotateX(-10deg)`        
+    room.style.transform = `rotateY(${mousePos.x*15}deg) rotateX(${mousePos.y*15}deg)`        
 }
 
 toTop.addEventListener('click',(e)=>{

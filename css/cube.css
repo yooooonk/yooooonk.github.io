@@ -55,22 +55,17 @@ video{
 }
 
 .cube-face-front { 
-    transform: rotateY(  0deg) translateZ(7.5vw);     
+    transform: rotateY(  0deg) translateZ(12vw);     
 }
-.cube-face-right { 
-    transform: rotateY( 90deg) translateZ(7.5vw);            
+
+.cube-face-top   { 
+    transform: rotateX( 40deg) translateZ(12vw);     
 }
 .cube-face-back  { 
-    transform: rotateY(180deg) translateZ(7.5vw) rotateZ(180deg);     
-}
-.cube-face-left  { 
-    transform: rotateY(-90deg) translateZ(7.5vw);       
-}
-.cube-face-top   { 
-    transform: rotateX( 90deg) translateZ(7.5vw);     
+    transform: rotateX(80deg) translateZ(12vw) ;     
 }
 .cube-face-bottom{ 
-    transform: rotateX(-90deg) translateZ(7.5vw);     
+    transform: rotateX(120deg) translateZ(12vw);     
 }
 
 .menu-title{
