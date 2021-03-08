@@ -3,13 +3,14 @@ font-family: 'Coming Soon', cursive;
 font-family: 'Gaegu', cursive;
 font-family: 'Noto Serif KR', serif;
 font-family: 'Yusei Magic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 */
 
 :root{
     --content-margin:3vh;
 
-    --color__font:#555;
-    --color__background: rgb(255, 245, 233);  
+    --color__font:rgb(41, 41, 41);
+    --color__background: rgb(252, 252, 252);  
 
     --font__size-l:5vh;
     --font__size-ml:3.5vh;
@@ -20,6 +21,7 @@ font-family: 'Yusei Magic', sans-serif;
     --font__kr : 'Noto Serif KR', serif ;
     --font__en :  'Roboto Slab', serif;
     --font__title-color: rgb(26, 0, 9);
+
 
     --light-pink:rgba(255, 188, 188, 0.788);
     --beige: #f4cfd0;
@@ -130,8 +132,9 @@ article section{
 
 .section-title{
     font-size: var(--font__size-l);
-    color: rgb(27, 1, 14);
-    border-bottom: var(--font__title-color) dotted 2px;    
+    color: rgb(255, 116, 158);    
+    font-family: 'Roboto Slab', serif;
+    border-bottom: rgba(250, 78, 130, 0.596) solid 10px;
 }
 
 .section-content{
@@ -205,31 +208,3 @@ article section{
 
 
 
-/*프로젝트*/
-
-
-.main-project .content-wrap{
-    width: 35vh;
-    height: 40vh;
-}
-
-.content-wrap div {
-    width: 100%;
-    height: 60%;
-}
-.content-wrap .content-img{
-    background-color: pink;
-    width: 100%;
-    height: 60%;
-}
-
-.content-wrap .content-des{
-    position: absolute;    
-    background-color: var(--beige);
-}
-
-.content-des hr{
-    text-align: right;
-    border: #555 dotted;
-    width: 30px;
-}
