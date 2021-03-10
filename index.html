@@ -7,7 +7,7 @@
     <meta property="og:description" content="영원히 성장하기" />    
     <meta property="og:url" content="https://yooooonk.github.io/" />
     <meta property="og:image" content="{{ url_for('image', filename='nada.jpg') }}" />
-
+    
     <link rel="shortcut icon" type="image/x-icon" href="image/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Gaegu:wght@400;700&family=Noto+Serif+KR&family=Roboto+Slab&family=Yusei+Magic&display=swap" rel="stylesheet">
@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="./css/cube.css">
     <link rel="stylesheet" href="./css/page.css">
     <link rel="stylesheet" href="./css/project.css">
+    
     <title>개발자 조윤경입니다</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 </head>
 <body>
     <div class="wrap">        
@@ -76,8 +80,12 @@
                 <div class="contact">
                     <a href="https://github.com/yooooonk" target="_blank"><i class="fab fa-github"></i> github </a>
                      | <a href="https://velog.io/@ouo_yoonk" target="_blank"><i class="fas fa-home"></i> blog </a> 
-                     | <a href="mailto:"sorbus92@naver.com"><i class="fas fa-envelope"></i>sorbus92@naver.com</a> 
+                     | <a href="#" class="copy-btn" data-clipboard-text="sorbus92@naver.com"><i class="fas fa-envelope"></i> email</a>                      
+                     <div>
+                        <div class="speech-bubble">email을 복사했습니다</div> 
+                     </div>
                      <!--TODO : email 클립보드 복사-->
+                     
                 </div>
                 <div class="about-description">                    
                     <span class="underbar">기초가 튼튼한 개발자</span>가 되기 위해 노력하고 있습니다. <br>
@@ -200,4 +208,5 @@
 </body>
 <!-- <script src="./js/index.js"></script> -->
 <script src="./js/cube.js"></script>
+<script src="./js/contact.js"></script>
 </html>
