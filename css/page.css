@@ -178,8 +178,10 @@ article section{
     margin: var(--content-margin) auto ;    
 }
 
+
 .speech-bubble {
     
+    display: none;
     text-align: center;
     font-size: 0.9em;
     width: 200px;
@@ -187,6 +189,7 @@ article section{
 	background: rgba(112, 112, 112, 0.692);
 	border-radius: .4em;
     color: white;
+    transition: all 0.3s ease;
 }
 
 /* .speech-bubble:after {
