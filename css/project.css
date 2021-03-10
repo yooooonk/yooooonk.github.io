@@ -1,55 +1,65 @@
 /*프로젝트*/
-
-.main-project{
-    margin: 2vh;
+.project{     
+    display: flex;  
     
+}
+
+.content-des{      
+    transition: .2s ease-in-out;    
+    background-color: rgb(173, 173, 173);
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+}
+img:hover {        
+    opacity: 0.1;
+}
+
+.content-des span{
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.main-project{    
+    margin: 2vh;    
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .main-project .content{
     width: 60vh;
-    height: 40vh;     
-    background-color: antiquewhite;
+    height: 30vh;         
 }
 
-.content div, img {
+.main-project .content div, 
+.main-project .content img {
     transition: all 0.4s ease-in-out;
     width: 60vh;
-    height: 40vh;
-    /* position: absolute; */
+    height: 30vh;
+    position: absolute; 
 }
 
-
-.content-des{    
-    z-index: -1;
-    
-    background-color: gray;
-}
-
-.content img:hover .content-des{
-    background-color: antiquewhite;
-    z-index: 1;
-}
-
-.content img:hover{
-    transform: scale(1.2);
-}
-
-/* .content .content-img{
-    background-color: pink;
+.sub-project{        
     width: 100%;
-    height: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
-.content .content-des{
-    position: absolute;    
-    background-color: var(--beige);
+.sub-project .content,
+.sub-project .content div,
+.sub-project .content img{
+    width: 36vh;
+    height: 24vh;          
+    transition: all 0.4s ease-in-out;
 }
 
-.content-des hr{
-    text-align: right;
-    border: #555 dotted;
-    width: 30px;
-} */
+.sub-project .content img{
+    position: relative;    
+    top: -24vh;
+}

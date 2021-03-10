@@ -77,7 +77,8 @@
                 <div class="about-description">                    
                     <span class="underbar">기초가 튼튼한 개발자</span>가 되기 위해 노력하고 있습니다. <br>
                     마술같이 보였던 기술이 마법이 아니었다는 것을 깨닫는 순간을 좋아합니다.<br>
-                    열정적인 동료들에게 많이 배우면서도 좋은 자극이 되고싶습니다.<br>
+                    깔끔한 코드로, 매끄러운 서비스를 만들고싶습니다.<br>
+                    열정적인 동료들과 좋은 자극을 주고받으며 성장하고 싶습니다.<br>
                     기술은 결국 사람을 향한다는 사실을 잊지않습니다.
                 </div>
 
@@ -95,13 +96,12 @@
                             <li>React, Next.js</li>
                             <li>Vue</li>
                         </ul>
-                        <div>
-                            페이지 mark up을 할 수 있습니다. <br>
+                        <div class="skill-detail">
+                            sementic tag를 이용해 페이지 mark up을 합니다. <br>
                             ES6 문법으로 코딩을 하고 있습니다.<br>
-                            flex-box와 반응형 웹을 이해하고 있습니다. <br> 인터렉티브 웹에도 관심이 많습니다. <br>
-                            SPA와 SSR을 이해하고, react로 어플리케이션을 만들었습니다.<br>                            
-                            상태관리 툴로 Redux를 사용해봤고, Saga로 api 비동기통신을 했습니다. <br>
-                            life cycle과 hooks 등을 이용한 성능향상이 front-end 개발자의 중요한 역량이라고 생각합니다 <br>
+                            media query와 flex-box로 반응형 웹을 구현했습니다. <br>                             
+                            react로 어플리케이션을 만들었습니다.<br>                            
+                            상태관리 툴로 Redux를 사용해봤고, Saga로 api 비동기통신을 했습니다. <br>                            
                             Vue의 사용법와 특징을 알고있습니다. <br>
                             webpack, babel 등 개발환경에 대한 공부를 하고 있습니다. 
                         </div>
@@ -112,7 +112,7 @@
                             <li>Node.js, exress</li>
                             <li>Spring, SpringBoot</li>
                         </ul>
-                        <div>
+                        <div class="skill-detail">
                             Node.js와 express를 이용해 api 서버를 만들었습니다. <br>
                             front-end와 back-end 간 흐름을 알고있습니다. <br>
                             
@@ -124,7 +124,7 @@
                             <li>MongoDB, Mongoose</li>
                             <li>Oracle</li>
                         </ul>
-                        <div>                            
+                        <div class="skill-detail">                            
                             RDMS와 NoSQL의 차이를 알고 사용합니다.<br>
                             RDMS에 조금 더 익숙합니다.
                             
@@ -135,18 +135,54 @@
             <section class="project">
                 <span class="section-title">PROJECT</span>
                 <div class="main-project">
-                    <div class="content">
-                        <img src="../image/my-taste.gif" class="conent-img">
-                            
-                        </img>    
+                    <a href="https://github.com/yooooonk/my-taste" target="_blank" class="content">
                         <div class="content-des">
-                            사진
+                            <span class="content-title">My taste</span><br/>
+                            내 취향의 책을 모아보고, 기록하자는 기획으로 만든 독서관리앱입니다.
+                            open API를 이용해 책을 검색하고, 좋아요한 책을 모아보고,
+                            책의 구절과 감상을 기록할 수 있습니다.
+                            react,nextjs,nodejs, mongoDB로 만들었습니다.
+                            상태관리는 redux로 middleware로 saga를 사용해 비동기 통신을 구현했습니다.                                                                                    
                         </div>    
-                    </div>
-              
-                    
+                        <img src="../image/my-taste.gif" class="conent-img" />
+                    </a>                                  
                 </div>
-                <div class="sub-project"></div>
+                <div class="sub-project">
+                    <a href="https://github.com/yooooonk/vue-trello" target="_blank" class="content">                                                
+                        <div class="content-des">
+                            <span class="content-title">Vue trello</span><br/>
+                            Vue로 trello로 클론코딩했습니다. vue와 vuex의 기능에 대해 학습하고, 기본적인 추가,수정,삭제 기능과 dragula를 이용해 드래그앤드롭 기능을 구현했습니다.
+                        </div>    
+                        <img src="../image/mytrello_card CRUD.gif" class="conent-img" />
+                    </a>    
+                    <a href="https://github.com/yooooonk/tiny-toy-project/tree/master/interactive-app" target="_blank" class="content">
+                        <div class="content-des">
+                            <span class="content-title">Interactive page</span><br/>
+                            인터렉티브 웹 기초 강의를 들으며 애니메이션, 3d, transform 요소와
+                            javascript 객체와 proto type, 이벤트 위임등을 학습했습니다.
+                        </div>     
+                        <img src="../image/character.gif" class="conent-img" />                        
+
+                    </a>         
+                    <a href="https://github.com/yooooonk/search-form-prac" target="_blank" class="content">
+                        <div class="content-des">
+                            <span class="content-title">Vanilla Search</span><br/>
+                            vanilla javascript로 구현한 검색폼 페이지입니다.
+                            local storage, 페이지 렌더링과 SPA의 작동원리를 이해할 수 있었고,
+                            drag 이벤트를 직접 구현했습니다.  
+                        </div>    
+                        <img src="../image/vanilla-book.gif" class="conent-img" />
+                    </a>   
+                    <a href="https://github.com/yooooonk/search-form-prac" target="_blank" class="content">
+                    <!--<div class="content-des">
+                            <span class="content-title">Vanilla Search</span><br/>
+                            vanilla javascript로 구현한 검색폼 페이지입니다.
+                            local storage, 페이지 렌더링과 SPA의 작동원리를 이해할 수 있었고,
+                            drag 이벤트를 직접 구현했습니다.  
+                        </div>    
+                        <img src="../image/vanilla-book.gif" class="conent-img" /> -->
+                    </a>                        
+                </div>
             </section>
             
             <section class="education">

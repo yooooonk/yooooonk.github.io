@@ -4,6 +4,7 @@ h2{
 
 .stage{
     position: fixed;
+    z-index: 2;
     left: 50vw;
     top: 0;     
     width: 50vw;
@@ -81,7 +82,7 @@ video{
 
 .scroll-bar{
     background-color: #c7e1e9;
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     left:50vw;    
     height: 20px;
@@ -98,6 +99,7 @@ video{
 }
 
 .to-top{
+    display: none;
     position:fixed;
     left: 47.5vw;
     bottom: 1%;

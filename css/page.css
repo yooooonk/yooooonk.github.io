@@ -48,7 +48,7 @@ a{
 
 article{
     width: 50vw;
-    z-index: 10;
+    
     font-family: var(--font__kr);
     font-size: var(--font__size-m);
 }
@@ -62,6 +62,7 @@ article section{
     align-items: center;
     
 }
+
 
 .underbar_bold{
     border-bottom: var(--light-pink) solid 10px;
@@ -83,11 +84,13 @@ article section{
         left: 0;
         width: 100vw;
         height: 30vh;
+        overflow: hidden;
     }
 
     video{
-        width: 100vh;
-        height: 30vh;
+        width:100vw;
+        height: 56vw;
+        
     }
 
     article{
@@ -102,6 +105,7 @@ article section{
     }
 
     .to-top{
+        display: block;
         left:90vw
     }
 } 
@@ -110,7 +114,7 @@ article section{
 @media screen and (max-width:480px){ 
     
     .stage{
-        display: none;
+        display: none;        
     }
 
     article{
@@ -121,13 +125,17 @@ article section{
         
     }
 
+    
     .scroll-bar{
         left: 0;
     }
 
     .to-top{
+        display: block;
         right:0
     }
+
+    
 } 
 
 .section-title{
@@ -202,7 +210,9 @@ article section{
     font-size: var(--font__size-sm);
 }
 
-
+.part .skill-detail{
+    font-size: 1vw;
+}
 
 
 
